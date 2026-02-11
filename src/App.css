@@ -1,8 +1,37 @@
-.landing-page {
+/* NAVBAR STYLING */
+.navbar {
+  background-color: #2e7d32;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.navbar h2 {
+  margin: 0;
+}
+
+.navbar button {
+  background-color: white;
+  color: #2e7d32;
+  border: none;
+  padding: 8px 15px;
+  margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.navbar button:hover {
+  background-color: #c8e6c9;
+}
+
+/* LANDING PAGE BACKGROUND */
+.background-image {
   background-image: 
     linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-    url('/plant-bg.jpg');
-    
+    url("/background.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -13,18 +42,34 @@
   justify-content: center;
   align-items: center;
 
-  color: white;
   text-align: center;
+  color: white;
+  padding: 20px;
 }
-button {
-  padding: 10px 20px;
+
+/* LANDING PAGE TEXT */
+.background-image h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.background-image p {
+  font-size: 18px;
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+
+/* GET STARTED BUTTON */
+.background-image button {
   background-color: #2e7d32;
   color: white;
   border: none;
+  padding: 12px 25px;
+  font-size: 16px;
   border-radius: 5px;
   cursor: pointer;
 }
 
-button:hover {
+.background-image button:hover {
   background-color: #1b5e20;
 }
